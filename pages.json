@@ -1,0 +1,195 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/login/login",
+		    "style" :                                                                                    
+		    {
+				//配置导航条样式为custom
+				//取消系统导航条
+				//可以配置自定义导航条
+		        "navigationStyle": "custom"
+		    }
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				//导航条标题
+				"navigationBarTitleText": "智慧社区",
+				//导航条背景颜色
+				"navigationBarBackgroundColor": "#009900",
+				//导航条标题文字颜色
+				"navigationBarTextStyle": "white"
+			}
+		}
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+				//导航条标题
+                "navigationBarTitleText": "我的",
+				//导航条背景色
+				"navigationBarBackgroundColor": "#009900",
+				//导航条文字颜色
+				"navigationBarTextStyle": "white",
+				//下拉刷新，禁止
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/community/community",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "社区",
+				"navigationBarBackgroundColor": "#009900",
+				"navigationBarTextStyle": "white",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/property/property",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "物业",
+                //"navigationBarBackgroundColor": "#009900",
+                //"navigationBarTextStyle": "white",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/queryPsw/queryPsw",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "找回密码",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/ad/ad",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "广告",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/property-fee/property-fee",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "物业缴费",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/parking/parking",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "智慧停车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/hospitals/hospitals",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "社区医疗",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/chatroom/chatroom",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "邻里互动",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/parent/parent",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/feeRecord/feeRecord",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "缴费记录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/feePay/feePay",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "缴费",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+    ],
+	"globalStyle": {//全局样式,在这里配置的样式对所有页面生效
+		"navigationBarBackgroundColor": "#009900",
+		"navigationBarTextStyle": "white"
+	},
+	"uniIdRouter": {},
+	"tabBar": {//配置页签
+		//文字(未激活)颜色
+		"color": "#8a8a8a",
+		//文字(激活)颜色
+		"selectedColor": "#009900",
+		//配置页签列表
+		"list": [
+			{
+				//页签上的文字
+				"text": "首页",
+				//页签对应的页面路径
+				"pagePath": "pages/index/index",
+				//图标(未激活)路径
+				"iconPath": "static/img/home.png",
+				//图标(激活)路径
+				"selectedIconPath": "static/img/home_active.png"
+			},{
+				//页签上的文字
+				"text": "物业",
+				//页签对应的页面路径
+				"pagePath": "pages/property/property",
+				//图标(未激活)路径
+				"iconPath": "static/img/property.png",
+				//图标(激活)路径
+				"selectedIconPath": "static/img/property_active.png"
+			},{
+				//页签上的文字
+				"text": "社区",
+				//页签对应的页面路径
+				"pagePath": "pages/community/community",
+				//图标(未激活)路径
+				"iconPath": "static/img/community.png",
+				//图标(激活)路径
+				"selectedIconPath": "static/img/community_active.png"
+			},{
+				//页签上的文字
+				"text": "我的",
+				//页签对应的页面路径
+				"pagePath": "pages/my/my",
+				//图标(未激活)路径
+				"iconPath": "static/img/my.png",
+				//图标(激活)路径
+				"selectedIconPath": "static/img/my_active.png"
+			}
+		]
+	}
+}
